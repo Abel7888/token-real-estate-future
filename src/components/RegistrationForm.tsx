@@ -4,10 +4,10 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Unlock } from "lucide-react";
 
 interface RegistrationFormProps {
-  buttonText?: string;
+  buttonText?: string | React.ReactNode;
   className?: string;
   variant?: "default" | "hero" | "cta";
 }
@@ -89,8 +89,18 @@ const RegistrationForm = ({ buttonText = "Register for Early Access", className 
             : "bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white px-12 py-6 text-xl font-semibold rounded-2xl shadow-2xl hover:shadow-blue-500/25 transition-all duration-300 hover:scale-105 mb-8"
           }
         >
-          {buttonText}
-          <ArrowRight className={variant === "hero" ? "ml-3 h-5 w-5" : "ml-4 h-6 w-6"} />
+          {variant === "hero" && (
+            <div className="flex items-center">
+              <Unlock className="mr-3 h-5 w-5" />
+              {typeof buttonText === 'string' ? buttonText : 'Coming Soon — Register for Early Access'}
+            </div>
+          )}
+          {variant === "cta" && (
+            <>
+              {buttonText}
+              <ArrowRight className="ml-4 h-6 w-6" />
+            </>
+          )}
         </Button>
       </div>
     );

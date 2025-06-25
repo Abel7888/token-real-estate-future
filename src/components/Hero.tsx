@@ -38,12 +38,7 @@ const Hero = () => {
           
           <RegistrationForm 
             variant="hero"
-            buttonText={
-              <div className="flex items-center">
-                <Unlock className="mr-3 h-5 w-5" />
-                Coming Soon — Register for Early Access
-              </div>
-            }
+            buttonText="Coming Soon — Register for Early Access"
           />
           
           <p className="mt-6 text-sm text-slate-400">
