@@ -6,7 +6,13 @@ const Hero = () => {
   return (
     <section className="relative overflow-hidden bg-gradient-to-br from-slate-900 via-blue-900 to-indigo-900 text-white">
       {/* Background decoration */}
-      <div className="absolute inset-0 bg-[url('data:image/svg+xml,%3Csvg width=\"60\" height=\"60\" viewBox=\"0 0 60 60\" xmlns=\"http://www.w3.org/2000/svg\"%3E%3Cg fill=\"none\" fill-rule=\"evenodd\"%3E%3Cg fill=\"%239C92AC\" fill-opacity=\"0.05\"%3E%3Ccircle cx=\"30\" cy=\"30\" r=\"4\"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E')] opacity-20"></div>
+      <div className="absolute inset-0 opacity-20">
+        <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-blue-500/10 to-indigo-500/10"></div>
+        <div className="absolute top-20 left-20 w-4 h-4 bg-blue-400/30 rounded-full"></div>
+        <div className="absolute top-40 right-32 w-6 h-6 bg-indigo-400/20 rounded-full"></div>
+        <div className="absolute bottom-32 left-1/4 w-3 h-3 bg-purple-400/25 rounded-full"></div>
+        <div className="absolute bottom-20 right-20 w-5 h-5 bg-blue-300/15 rounded-full"></div>
+      </div>
       
       <div className="relative container mx-auto px-6 py-20 lg:py-32">
         <div className="max-w-4xl mx-auto text-center">
