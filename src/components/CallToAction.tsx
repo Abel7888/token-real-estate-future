@@ -1,6 +1,5 @@
 
-import { Button } from "@/components/ui/button";
-import { ArrowRight } from "lucide-react";
+import RegistrationForm from "./RegistrationForm";
 
 const CallToAction = () => {
   return (
@@ -31,13 +30,10 @@ const CallToAction = () => {
             🚀 ReTokenize is launching soon. Don't miss early access to our first tokenized offerings.
           </p>
           
-          <Button 
-            size="lg" 
-            className="bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white px-12 py-6 text-xl font-semibold rounded-2xl shadow-2xl hover:shadow-blue-500/25 transition-all duration-300 hover:scale-105 mb-8"
-          >
-            Join the Waitlist — Register for Early Access
-            <ArrowRight className="ml-4 h-6 w-6" />
-          </Button>
+          <RegistrationForm 
+            variant="cta"
+            buttonText="Join the Waitlist — Register for Early Access"
+          />
           
           <p className="text-slate-400 text-lg">
             Limited early spots available for both investors and property owners.

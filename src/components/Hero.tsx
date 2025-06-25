@@ -1,6 +1,6 @@
 
-import { Button } from "@/components/ui/button";
-import { ArrowRight, Unlock } from "lucide-react";
+import { Unlock } from "lucide-react";
+import RegistrationForm from "./RegistrationForm";
 
 const Hero = () => {
   return (
@@ -36,14 +36,15 @@ const Hero = () => {
             Own a piece of premium commercial real estate — fully digitized, fully compliant, fully yours.
           </p>
           
-          <Button 
-            size="lg" 
-            className="bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white px-8 py-4 text-lg font-semibold rounded-xl shadow-2xl hover:shadow-blue-500/25 transition-all duration-300 hover:scale-105"
-          >
-            <Unlock className="mr-3 h-5 w-5" />
-            Coming Soon — Register for Early Access
-            <ArrowRight className="ml-3 h-5 w-5" />
-          </Button>
+          <RegistrationForm 
+            variant="hero"
+            buttonText={
+              <div className="flex items-center">
+                <Unlock className="mr-3 h-5 w-5" />
+                Coming Soon — Register for Early Access
+              </div>
+            }
+          />
           
           <p className="mt-6 text-sm text-slate-400">
             Limited early spots available for both investors and property owners
