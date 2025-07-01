@@ -11,7 +11,9 @@ const PoweredBy = () => {
             🛠️ Enterprise Grade Infrastructure
           </div>
           <h2 className="text-4xl lg:text-5xl font-bold mb-6 text-slate-900">
-            Powered by Securitize.{" "}
+            Backed by a Regulated Digital Securities Platform
+
+.{" "}
             <span className="text-blue-600">Built for You.</span>
           </h2>
           <p className="text-xl text-slate-600 max-w-3xl mx-auto leading-relaxed">
